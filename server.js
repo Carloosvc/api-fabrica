@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 app.get("/estado", (req, res) => {
   res.json({
     modoFabrica: "AUTOMATICO",
-    alarma: true,
+    alarma: false,
     puerta: {
       estado: "ABIERTA",
       ultimoAcceso: "RFID"
