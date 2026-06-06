@@ -7,6 +7,10 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("API fabrica funcionando");
+});
+
 app.get("/estado", (req, res) => {
   res.json({
     modoFabrica: "AUTOMATICO",
