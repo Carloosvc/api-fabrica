@@ -25,7 +25,7 @@ app.get("/estado", (req, res) => {
       error: false
     },
     generador: {
-      estado: "NORMAL",
+      estado: "CRITICO",
       energia: 75,
       consumo: 35
     }
