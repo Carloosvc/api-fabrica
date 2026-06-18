@@ -14,18 +14,18 @@ app.get("/", (req, res) => {
 app.get("/estado", (req, res) => {
   res.json({
     modoFabrica: "AUTOMATICO",
-    alarma: false,
+    alarma: true,
     puerta: {
       estado: "ABIERTA",
       ultimoAcceso: "RFID"
     },
     prensa: {
-      estado: "ENCENDIDA",
+      estado: "TRABAJANDO",
       ciclos: 24,
       error: false
     },
     generador: {
-      estado: "NORMAL",
+      estado: "CRITICO",
       energia: 75,
       consumo: 35
     }
